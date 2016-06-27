@@ -142,7 +142,7 @@ public class DecryptionHelper {
 
             byte[] decrypted;
             if (algorithm !=null && !algorithm.isEmpty() && algorithm.equals(Constants.CIPHER_ALGORITHM_DEFAULT)) {
-                decrypted = blockCipher(baseCipher, toDecrypt, Cipher.ENCRYPT_MODE);
+                decrypted = blockCipher(baseCipher, toDecrypt, Cipher.DECRYPT_MODE);
             } else {
                 decrypted = baseCipher.decrypt(toDecrypt);
             }
