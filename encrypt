@@ -6,7 +6,7 @@ if [ ! -d "target" ]; then
 fi
 
 if [ $1 == help ]; then
-  echo "Usage: ./encrypt <plainTextPassword> <propertiesFilePath>"
+  echo "Usage: ./encrypt <mode(encrypt|decrypt)> <plainTextPassword> <propertiesFilePath>"
   echo "This <propertiesFilePath> will default to 'secureVault.properties' and sample file will be there."
   echo "Properties file should contains below properties"
   echo "keystore.identity.location=[keystoreLocation]";
@@ -21,4 +21,4 @@ if [ $1 == help ]; then
   exit 1
 fi
 
-java -cp "target/*" org.wso2.custom.crypto.util.VaultEncrypt $1 $2
+java -cp "target/*" org.wso2.custom.crypto.util.VaultEncryptDecrypt $1 $2 $3

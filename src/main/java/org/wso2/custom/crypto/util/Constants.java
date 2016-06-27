@@ -40,10 +40,8 @@ public interface Constants {
      * encode type of the given value to be encoded
      */
     public final static String INPUT_ENCODE_TYPE = "input.encode.type";
-    public final static EncodingType INPUT_ENCODE_TYPE_DEFAULT = null;
     /**
      * encode type of the final outcome.
      */
     public final static String OUTPUT_ENCODE_TYPE = "output.encode.type";
-    public final static EncodingType OUTPUT_ENCODE_TYPE_DEFAULT = EncodingType.BASE64;
 }

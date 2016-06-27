@@ -68,4 +68,41 @@ public class Util {
         }
         return isValid;
     }
+
+    /**
+     * Helper method to decide encode decode types.
+     *
+     * @param value
+     * @param defaultValue
+     * @return type
+     */
+    public static EncodeDecodeTypes getEncodeDecodeType(String value, EncodeDecodeTypes defaultValue) {
+        if (value != null && !value.isEmpty() && value.equals(EncodeDecodeTypes.BASE64)) {
+            return EncodeDecodeTypes.BASE64;
+        } else if (value != null && !value.isEmpty() && value.equals(EncodeDecodeTypes.BIGINTEGER16)) {
+            return EncodeDecodeTypes.BIGINTEGER16;
+        } else if (value != null && !value.isEmpty() && value.equals(EncodeDecodeTypes.HEX)){
+            return EncodeDecodeTypes.HEX;
+        } else {
+            return defaultValue;
+        }
+    }
+
+    /**
+     * Helper method to append encrypted parts to the response.
+     *
+     * @param value
+     * @param toAppend
+     * @return response
+     */
+    public static byte[] append(byte[] value, byte[] toAppend) {
+        byte[] response = new byte[value.length + toAppend.length];
+        for (int i = 0; i < value.length; i++) {
+            response[i] = value[i];
+        }
+        for (int i = 0; i < toAppend.length; i++) {
+            response[i + value.length] = toAppend[i];
+        }
+        return response;
+    }
 }
