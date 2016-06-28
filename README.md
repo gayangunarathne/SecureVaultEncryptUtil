@@ -19,16 +19,16 @@ and the plain text password can not be seen
  If you doesn't provide a properties file, it will take the default one which is in project folder, so you can use that to mention required properties
 Below are the properties you can configure through properties file
 
-keystore.identity.location=keystore location
-keystore.identity.store.username=keystore user name
-keystore.identity.store.password=keystore password
-keystore.identity.alias=key alias
-keystore.identity.type=(JKS etc)
-keystore.identity.parameters=enableHostnameVerifier=false;keyStoreCertificateFilePath=/home/esb.cer
-keystore.identity.key.username=key user name
-keystore.identity.key.password=key password
-cipher.algorithm=defaults to RSA
-cipher.type=('symmetric' or 'asymmetric')
-security.provider=(BC etc)
-input.encode.type=says whether input is in which encoding type, defaults to BASE64
-output.encode.type=says output should be in which encoding type, defaults to null (no encoding)
+keystore.identity.location=keystore location<br />
+keystore.identity.store.username=keystore user name<br />
+keystore.identity.store.password=keystore password<br />
+keystore.identity.alias=key alias<br />
+keystore.identity.type=(JKS etc)<br />
+keystore.identity.parameters=enableHostnameVerifier=false;keyStoreCertificateFilePath=/home/esb.cer<br />
+keystore.identity.key.username=key user name<br />
+keystore.identity.key.password=key password<br />
+cipher.algorithm=defaults to RSA<br />
+cipher.type=('symmetric' or 'asymmetric')<br />
+security.provider=(BC etc)<br />
+input.encode.type=says whether input is in which encoding type, defaults to BASE64<br />
+output.encode.type=says output should be in which encoding type, defaults to null (no encoding)<br />
