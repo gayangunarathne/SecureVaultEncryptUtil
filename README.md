@@ -30,5 +30,5 @@ keystore.identity.key.password=key password<br />
 cipher.algorithm=defaults to RSA<br />
 cipher.type=('symmetric' or 'asymmetric')<br />
 security.provider=(BC etc)<br />
-input.encode.type=says whether input is in which encoding type, defaults to BASE64 in decrypt path and defaults to null in encrypt path<br />
-output.encode.type=says output should be in which encoding type, defaults to null in decrypt path and defaults to BASE64 in encrypt path (no encoding)<br />
+input.encode.type=says whether input is in which encoding type, defaults to BASE64 in decrypt path and defaults to null(no encoding) in encrypt path<br />
+output.encode.type=says output should be in which encoding type, defaults to null(no encoding) in decrypt path and defaults to BASE64 in encrypt path<br />
