@@ -12,9 +12,11 @@ run the *encrypt* script as follows
 **Security Tip:** when executing the encrypt script, start with a *whitespace* so that this command will not be available in the .bash_history file
 and the plain text password can not be seen
 
-#Note# that encrypted password will be written to the log file as well. (log file will get created in "<PROJECT_HOME>/log" folder by default and if you need you can change that behavior using a log4j.properties file)
+####Note
+ The encrypted password will be written to the log file as well. (log file will get created in "<PROJECT_HOME>/log" folder by default and if you need you can change that behavior using a log4j.properties file)
 
-#Note# that if you doesn't provide a properties file, it will take the default one which is in project folder, so you can use that to mention required properties
+####Note
+ If you doesn't provide a properties file, it will take the default one which is in project folder, so you can use that to mention required properties
 Below are the properties you can configure through properties file
 
 keystore.identity.location=keystore location
