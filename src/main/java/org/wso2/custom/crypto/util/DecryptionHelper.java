@@ -29,7 +29,7 @@ import java.util.Properties;
  * Class which does the decryption and if provided, encoding part as well
  */
 public class DecryptionHelper {
-    private static Log log = LogFactory.getLog(sample.class);
+    private static Log log = LogFactory.getLog(DecryptionHelper.class);
 
     /**
      * Method to run encryption.
