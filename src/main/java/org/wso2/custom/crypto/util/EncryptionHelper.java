@@ -132,11 +132,11 @@ public class EncryptionHelper {
 
             EncryptionProvider baseCipher = CipherFactory.createCipher(cipherInformation, identityKeyStoreWrapper);
             byte[] encryptedPassword;
-            if (algorithm !=null && !algorithm.isEmpty() && algorithm.equals(Constants.CIPHER_ALGORITHM_DEFAULT)) {
-                encryptedPassword = blockCipher(baseCipher, toEncrypt, Cipher.ENCRYPT_MODE);
-            } else {
+//            if (algorithm !=null && !algorithm.isEmpty() && algorithm.equals(Constants.CIPHER_ALGORITHM_DEFAULT)) {
+//                encryptedPassword = blockCipher(baseCipher, toEncrypt, Cipher.ENCRYPT_MODE);
+//            } else {
                 encryptedPassword = baseCipher.encrypt(toEncrypt);
-            }
+//            }
 
             if (outType != null) {
                 encryptedPassword = EncodeDecodeHelper.encode(encryptedPassword, outType);
